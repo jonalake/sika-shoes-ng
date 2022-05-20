@@ -1,5 +1,7 @@
 # Sika Shoes: Routing and Services
 
+Deployed site : [Sika Shoes](https://sika-shoes-ng.netlify.app)
+
 ![Shoe store](sika-shoes.png)
 
 Add routing and a data service to the included Angular app. The routes:
