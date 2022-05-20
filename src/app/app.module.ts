@@ -1,14 +1,15 @@
-import {NgModule} from "@angular/core";
-import {BrowserModule} from "@angular/platform-browser";
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule, Routes } from '@angular/router';
 
-import {AppComponent} from "./app.component";
-import {AboutPageComponent} from "./about-page/about-page.component";
-import {HomePageComponent} from "./home-page/home-page.component";
-import {ProductPageComponent} from "./product-page/product-page.component";
-import {ProductsPageComponent} from "./products-page/products-page.component";
-import {NavBarComponent} from "./nav-bar/nav-bar.component";
-import {ProductListingComponent} from "./product-listing/product-listing.component";
+import { HttpClientModule } from '@angular/common/http'
+import { AppComponent } from "./app.component";
+import { AboutPageComponent } from "./about-page/about-page.component";
+import { HomePageComponent } from "./home-page/home-page.component";
+import { ProductPageComponent } from "./product-page/product-page.component";
+import { ProductsPageComponent } from "./products-page/products-page.component";
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { ProductListingComponent } from "./product-listing/product-listing.component";
 
 const routes: Routes = [{
   path: '',
@@ -41,9 +42,10 @@ const routes: Routes = [{
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    HttpClientModule,
   ],
   exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
